@@ -1,7 +1,5 @@
 package vehiculos;
 
-import Pais;
-
 import java.util.Map;
 import java.util.HashTable;
 import java.util.Set;
@@ -40,7 +38,7 @@ public class Fabricante{
         this.pais = pais;
     }
 
-    
+
     public static void unaVentaMas(String nombre){
         fabricas.put(nombre,fabricas.get(nombre) + 1);
     }
