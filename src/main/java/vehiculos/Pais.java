@@ -7,10 +7,23 @@ import java.util.Set;
 class Pais{
     String nombre;
     public static Set<String, int> paises = new HashTable();
-    
+
+    public Pais(){
+
+    }
+
     public Pais(String nombre){
         this.nombre = nombre ;
     }
+
+    public String getNombre(){
+        return this.nombre;
+    }
+
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    
     public static void unaVentaMas(String nombre){
         paises.put(nombre, paises.get(nombre) + 1);
     }

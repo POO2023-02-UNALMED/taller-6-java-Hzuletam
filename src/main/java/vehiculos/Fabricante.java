@@ -11,6 +11,10 @@ public class Fabricante{
     public Pais pais;
     public static Map<String, int> fabricas = new HashTable();
 
+    public Fabricante(){
+
+    }
+
     public Fabricante(Pais pais, String nombre){
         this.nombre = nombre ; 
         this.pais = pais;
@@ -20,6 +24,23 @@ public class Fabricante{
         
     }
 
+    public String getNombre(){
+        return this.nombre;
+    }
+
+    public void setNombre(String Nombre){
+        this.nombre = nombre;
+    }
+
+    public Pais getPais(){
+        return this.pais;
+    }
+
+    public void setPais(Pais pais){
+        this.pais = pais;
+    }
+
+    
     public static void unaVentaMas(String nombre){
         fabricas.put(nombre,fabricas.get(nombre) + 1);
     }
