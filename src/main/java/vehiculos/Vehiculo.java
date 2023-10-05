@@ -97,11 +97,11 @@ public class Vehiculo{
     }
 
     public static int getCantidadVehiculos(){
-        return this.CantidadVehiculos;
+        return CantidadVehiculos;
     }
 
     public static void setCantidadVehiculos(int cantidad){
-        this.CantidadVehiculos = cantidad;
+        CantidadVehiculos = cantidad;
     }
 
     public static String vehiculosPorTipo(){
