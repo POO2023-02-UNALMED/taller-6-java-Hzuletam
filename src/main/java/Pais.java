@@ -27,4 +27,8 @@ class Pais{
         }
         return paisMasVendedor;
     }
+
+    public void unaVentaMas(String nombre){
+        paises.put(nombre,paises.get(nombre) + 1);
+    }
 }
