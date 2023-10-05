@@ -1,13 +1,11 @@
 package vehiculos;
 
-import java.util.Map;
-import java.util.HashTable;
-import java.util.Set;
+import java.util.ArrayList;
 
 public class Fabricante{
     public String nombre ;
     public Pais pais;
-    public static Map<String, int> fabricas = new HashTable();
+    public static ArrayList<Fabricante> fabricas = new ArrayList<>();
 
     public Fabricante(){
 
@@ -16,10 +14,7 @@ public class Fabricante{
     public Fabricante(Pais pais, String nombre){
         this.nombre = nombre ; 
         this.pais = pais;
-        if (fabricas.contains(nombre) = false){
-            fabricas.put(nombre, (int) 0);
-        }
-        
+        Pais.paises.add(this.pais);
     }
 
     public String getNombre(){
@@ -38,21 +33,28 @@ public class Fabricante{
         this.pais = pais;
     }
 
-
-    public static void unaVentaMas(String nombre){
-        fabricas.put(nombre,fabricas.get(nombre) + 1);
-    }
     
-    public String fabricaMayorVentas(){
-    Set<String> fabricas = fabricas.keyset();
-    String mejorFabrica;
-    int cantidadVendidos;
-    for(String fabrica : fabricas){
-    if (fabricas.get(fabrica) > cantidadVendidos){
-        mejorFabrica = fabrica;
-        cantidadVendidos = fabricas.get(fabrica);
+    public static Fabricante fabricaMayorVentas(){
+        Fabricante max = null;
+        
+        int C_max = 0 ; 
+
+        for(var fabrica : fabricas){
+            int c = 0 ;
+            for(var fabricatemp : fabricas){
+                if(fabrica == fabricatemp){
+                    c++;
+                }
+            }
+            if (C_max < c){
+
+                C_max = c;
+                max = fabrica;
+
+            }
         }
-    return mejorFabrica;
-        }
+
+        return max;
+        
     }
 }
