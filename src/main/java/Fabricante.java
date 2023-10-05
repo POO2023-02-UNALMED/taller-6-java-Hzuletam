@@ -12,4 +12,5 @@ public class Fabricante{
         
     }
 
+    public String fabricaMayorVentas()
 }
