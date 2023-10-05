@@ -23,6 +23,8 @@ public class Vehiculo{
         this.traccion = traccion;
         this.fabricante = fabricante;
         CantidadVehiculos+=1;
+        Fabricante.unaVentaMas(fabricante);
+        
     }
     public String getPlaca(){
         return placa;
