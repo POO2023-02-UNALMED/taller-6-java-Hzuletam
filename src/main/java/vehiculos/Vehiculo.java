@@ -24,6 +24,7 @@ public class Vehiculo{
         this.fabricante = fabricante;
         CantidadVehiculos+=1;
         Fabricante.unaVentaMas(fabricante);
+        Pais.unaVentaMas(fabricante.getPais());
         
     }
     public String getPlaca(){
