@@ -108,6 +108,5 @@ public class Vehiculo{
         System.out.println("Automoviles: "+Automoviles.cantidadAutomoviles()
         +"\nCamionetas: "+Camionetas.cantidadCamionetas()
         +"\nCamiones: "+Camion.cantidadCamiones());
-<<<<<<< HEAD
     } 
 }
