@@ -96,4 +96,5 @@ public class Vehiculo{
         System.out.println("Automoviles: "+Automoviles.getCantidadVehiculos()
         +"\nCamionetas: "+Camionetas.getCantidadVehiculos()
         +"\nCamiones: "+Camion.getCantidadVehiculos());
+    }
 }   
