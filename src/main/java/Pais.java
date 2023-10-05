@@ -15,6 +15,10 @@ class Pais{
         }
     }
 
+    public static void unaVentaMas(String nombre){
+        paises.put(nombre, paises.get(nombre) + 1);
+    }
+
     public String paisMasVendedor(){
         Set<String> llaves = paises.keySet();
         String paisMasVendedor;
