@@ -25,7 +25,7 @@ public class Camioneta extends Vehiculo{
 
     }
 
-    public int cantidadCamionetas(){
+    public static int cantidadCamionetas(){
         return camionetasExisten.size();
     }
 }

@@ -23,7 +23,7 @@ public class Automovil extends Vehiculo{
         this.puestos = puestos;
     }
 
-    public int cantidadAutomoviles(){
+    public static int cantidadAutomoviles(){
         return cantidadAutos.size();
     }
 }
