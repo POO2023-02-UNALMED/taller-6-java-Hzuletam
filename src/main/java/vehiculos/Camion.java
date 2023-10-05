@@ -26,7 +26,7 @@ public class Camion extends Vehiculo{
     }
 
     public static int cantidadCamiones(){
-        return this.cantidadCamiones.size();
+        return cantidadCamiones.size();
     }
     
 }

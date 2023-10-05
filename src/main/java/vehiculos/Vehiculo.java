@@ -104,9 +104,9 @@ public class Vehiculo{
         this.CantidadVehiculos = cantidad;
     }
 
-    public int vehiculosPorTipo(){
+    public String vehiculosPorTipo(){
         return "Automoviles: " + Automovil.cantidadAutomoviles()
-        + "\nCamionetas: "+ Camioneta.cantidadCamionetas()
-        + "\nCamiones: "+ Camion.cantidadCamiones();
+        + "\nCamionetas: " + Camioneta.cantidadCamionetas()
+        + "\nCamiones: " + Camion.cantidadCamiones();
     } 
 }
