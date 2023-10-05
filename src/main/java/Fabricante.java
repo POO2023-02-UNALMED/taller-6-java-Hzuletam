@@ -9,7 +9,7 @@ import java.util.Set;
 public class Fabricante{
     public String nombre ;
     public Pais pais;
-    public Map<String, int> fabricas = new HashTable();
+    public static Map<String, int> fabricas = new HashTable();
 
     public Fabricante(Pais pais, String nombre){
         this.nombre = nombre ; 
@@ -20,7 +20,7 @@ public class Fabricante{
         
     }
 
-    public void unaVentaMas(String nombre){
+    public static void unaVentaMas(String nombre){
         fabricas.put(nombre,fabricas.get(nombre) + 1);
     }
     
