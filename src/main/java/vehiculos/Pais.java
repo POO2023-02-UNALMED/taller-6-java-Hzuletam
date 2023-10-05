@@ -2,7 +2,7 @@ package vehiculos;
 
 import java.util.ArrayList;
 
-class Pais{
+public class Pais{
     String nombre;
     public static ArrayList<Pais> paises = new ArrayList<>();
 
