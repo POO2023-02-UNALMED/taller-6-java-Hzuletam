@@ -1,8 +1,13 @@
 package vehiculos;
 
+import java.util.Map;
+import java.util.HashTable;
+import java.util.Set;
+
 class Pais{
     String nombre;
-
+    public static Set<String, int> paises = new HashTable();
+    
     public Pais(String nombre){
         this.nombre = nombre ;
     }
