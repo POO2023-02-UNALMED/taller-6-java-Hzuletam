@@ -7,14 +7,14 @@ public class Camion extends Vehiculo{
     private static ArrayList<Camion> cantidadCamiones = new ArrayList<>();
 
     public Camion(){
-        cantidadCamiones.add(this);
+        
 
     }
 
     public Camion(String placa, String nombre, int precio, int peso, Fabricante fabricante, int ejes){
         super(placa ,2, 80,nombre, precio, peso, "4X2",fabricante);
         this.ejes = ejes;
-        cantidadCamiones.add(this);
+        
     }
 
     public int getEjes(){
