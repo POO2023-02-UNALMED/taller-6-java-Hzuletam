@@ -105,8 +105,8 @@ public class Vehiculo{
     }
 
     public int vehiculosPorTipo(){
-        return "Automoviles: " + Automoviles.cantidadAutomoviles()
-        + "\nCamionetas: "+ Camionetas.cantidadCamionetas()
+        return "Automoviles: " + Automovil.cantidadAutomoviles()
+        + "\nCamionetas: "+ Camioneta.cantidadCamionetas()
         + "\nCamiones: "+ Camion.cantidadCamiones();
     } 
 }
