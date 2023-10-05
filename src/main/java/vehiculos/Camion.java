@@ -1,6 +1,5 @@
 package vehiculos;
 
-import Vehiculo;
 import java.util.ArrayList;
 
 public class Camion extends Vehiculo{

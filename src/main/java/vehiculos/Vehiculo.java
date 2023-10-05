@@ -14,6 +14,7 @@ public class Vehiculo{
     public static int CantidadVehiculos;
     
     public Vehiculo(){
+        CantidadVehiculos += 1;
 
     }
 
@@ -105,8 +106,8 @@ public class Vehiculo{
     }
 
     public int vehiculosPorTipo(){
-        System.out.println("Automoviles: "+Automoviles.cantidadAutomoviles()
-        +"\nCamionetas: "+Camionetas.cantidadCamionetas()
-        +"\nCamiones: "+Camion.cantidadCamiones());
+        return "Automoviles: " + Automoviles.cantidadAutomoviles()
+        + "\nCamionetas: "+ Camionetas.cantidadCamionetas()
+        + "\nCamiones: "+ Camion.cantidadCamiones();
     } 
 }
