@@ -11,7 +11,7 @@ public class Fabricante{
 
     }
 
-    public Fabricante(Pais pais, String nombre){
+    public Fabricante(String nombre, Pais pais){
         this.nombre = nombre ; 
         this.pais = pais;
         Pais.paises.add(this.pais);
@@ -55,6 +55,6 @@ public class Fabricante{
         }
 
         return max;
-        
+
     }
 }
