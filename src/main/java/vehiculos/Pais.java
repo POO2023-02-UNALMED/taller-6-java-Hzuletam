@@ -31,7 +31,7 @@ public class Pais{
             var cantidad = 0;
             for (var paistemp : paises){
                 if (pais == paistemp){
-                    cantidad++;
+                    cantidad+=1;
                 }
             }
             if (cantidadV < cantidad){
