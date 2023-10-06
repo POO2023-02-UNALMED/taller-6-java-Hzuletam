@@ -43,7 +43,7 @@ public class Fabricante{
             int c = 0 ;
             for(var fabricatemp : fabricas){
                 if(fabrica == fabricatemp){
-                    c++;
+                    c+=1;
                 }
             }
             if (C_max < c){
