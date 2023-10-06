@@ -97,7 +97,7 @@ public class Vehiculo{
     }
 
     public static int getCantidadVehiculos(){
-        return Vehiculos.CantidadVehiculos;
+        return Vehiculo.CantidadVehiculos;
     }
 
     public static void setCantidadVehiculos(int cantidad){
